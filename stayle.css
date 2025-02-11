@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* تصميم شريط التنقل */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+/*  زر القائمة (Hamburger Menu) يظهر فقط على الجوال */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #E36F32;
+}
+
+/* تصميم اللوجو */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E36F32;
+}
+
+.logo img {
+    height: 24px;
+    margin-right: 5px;
+}
+
+/*  تصميم شريط البحث */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    background: #E36F32;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    color: white;
+    font-size: 16px;
+}
+
+/*  تصميم زر تسجيل الدخول */
+.login {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.login i {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #E36F32;
+}
+.container{
+
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border: 8px solid #D6783D; /* Orange border */
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+}
+
+
+/*  تحسين استجابة التصميم للأجهزة المختلفة */
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .login {
+        font-size: 12px;
+    }
+
+    .search-bar input {
+        width: 120px;
+    }
+}
+
+/*  تصميم صندوق الإحصائيات الرئيسي */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #002F6C; /* لون الخلفية الأزرق */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/*  تصميم كل عنصر إحصائي */
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 120px;
+}
+
+/* تصميم الدائرة الملونة */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* تنسيق الأرقام */
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/*  تنسيق النص أسفل الأرقام */
+.label {
+    font-size: 14px;
+    color: #D4D4D4;
+}
+
+/*  ضبط تناسب التصميم على الجوال بعرض 600px أو أقل */
+@media (max-width: 600px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .stat-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 22px;
+    }
+
+    .label {
+        font-size: 13px;
+    }
+    header .content .h1{
+        font-size: 40px;
+    }
+    /*new staylu*/
+    /* Image Styles */
+
+.image-container .food-image {
+    display: flex;
+    justify-content: center; /* توسيط الصورة */
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.food-image{
+    width: 100%;
+    height: 400px;
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+  }
+/*Responsiveness*/
+
+
+/*  لل تنسيقات عامة للNewsletters */
+.Newsletters {
+    padding: 20px;
+    background-color: #e8eca8;
+  }
+  
+  .news-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .news-item {
+    display: flex; /* يجعل الصورة والنص بجانب بعضهما */
+    align-items: center; /* توسيط العناصر عموديًا */
+    margin-bottom: 20px;
+  }
+  
+  .news-item img {
+    width: 100px; /* حجم الصورة */
+    height: 100px; /* ارتفاع الصورة */
+    margin-right: 15px; /* مسافة بين الصورة والنص */
+  }
+  
+  .news-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0; /* إزالة الهامش الافتراضي */
+  }
+  
+
+  /* ضبط عام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* تنسيق قسم "Trending Now" */
+.trending-section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* عنوان القسم مع الشريط البرتقالي */
+.trending-title {
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.trending-title span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* الشبكة الخاصة بالمواضيع */
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودين */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* تنسيق عناصر المواضيع */
+.trend-item {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.trend-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* تصنيف المقالات */
+.category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    margin: 10px 0 5px 10px;
+}
+
+/* عنوان المقال */
+.trend-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px 10px;
+
+/*Mobile Devices, تنسيقات الموقع  */
+#navbar {
+    display: flex;
+    flex-direction: row; /* الاتجاه الافتراضي */
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo .icon  {
+        margin-bottom: 20px;
+    }
+
+    #navbar .Search {
+        margin-bottom: 20px;
+    }
+    /**/
+    nav ul li a {
+        display: block;
+        margin-bottom: 10px;
+    
+}
+/*حجم البوكس والعنوان */
+header .content { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: blue; 
+    min-height: 18px; /* حجم بوكس ك */
+} 
+
+header .content h1 { 
+    font-size: 18px; 
+
+}
+
+.stat-box .dot{
+    font-size: 13px;
+   
+    
+}
+.stats-container{
+        
+  height: auto;
+  padding: 4rm 2rem;
+  
+}
+
+.image-container {
+           width: 50px;
+}
+
+
+
+
+/*تصميم القسم الثاني من الموقع */
+
+    .news-item img {
+      width:100px; /* تصغير الصورة أكثر للجوال */
+      height: 80px;
+    }
+  
+    .news-item h3 {
+      font-size: 14px; /* تصغير حجم الخط للجوال */
+    }
+  
+  
+    /*Sweepstakes Start*/ 
+
+/* تحسين العرض في الجوال */
+
+    .trending-grid {
+        grid-template-columns: 1fr; /* عمود واحد فقط في الجوال */
+    }
+
+    .trend-item img {
+        height: 150px;
+    }
+
+    .trend-title {
+        font-size: 14px;
+    }
+    .trending-grid {
+        grid-template-columns: 1fr; /* عمود واحد فقط في الجوال */
+    }
+
+    .trend-item img {
+        height: 150px;
+    }
+
+    .trend-title {
+        font-size: 14px;
+    }
+}}}
+   
+
+    /*Sweepstakes Start*/
+
+/* General Page Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Title */
+.trending-title {
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.trending-title span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Grid Layout */
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.trend-item {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trend-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.trend-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Home Cook Section */
+.home-cook {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-cook h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D48A00;
+    margin-bottom: 10px;
+}
+
+.home-cook p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: #E57A23;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-section img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+/*HERE NEW S*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HERE NEW S*/
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .trending-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trend-item img {
+        height: 150px;
+    }
+
+    .trend-title {
+        font-size: 14px;
+    }
+
+    .image-section img {
+        width: 900px;
+    }
+}

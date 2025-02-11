@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllRecipes Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<style>/* General Styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #F8F8F8;
+        text-align: center;
+    }
+    
+    /* Footer Container */
+    .footer {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    /* Logo Styling */
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: #E67E22;
+        text-transform: lowercase;
+        margin-bottom: 15px;
+    }
+    
+    .spoon {
+        color: #F4A261;
+    }
+    
+    /* Newsletter Button */
+    .newsletter button {
+        background-color: white;
+        border: 2px solid #E67E22;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+    }
+    
+    .newsletter button:hover {
+        background-color: #E67E22;
+        color: white;
+    }
+    
+    /* Social Media Section */
+    .social-media p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 22px;
+    }
+    
+    .icons i {
+        color: black;
+        transition: color 0.3s ease;
+    }
+    
+    .icons i:hover {
+        color: #E67E22;
+    }
+    
+    /* Footer Links */
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .column {
+        width: 50%;
+    }
+    
+    .column p {
+        font-size: 14px;
+        /*font-weight: bold;*/
+        margin-bottom: 8px;
+    }
+    
+    /* Bottom Links */
+    .bottom-links {
+        margin-top: 20px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bottom-links .column {
+        width: 50%;
+        text-align: left;
+    }
+    
+    .bottom-links p {
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
+    .bottom-links p:hover {
+        color: #E67E22;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer {
+            width: 90%;
+        }
+    
+        .icons {
+            font-size: 18px;
+        }
+    
+        .footer-links {
+            flex-direction: row;
+            gap: 40px;
+        }
+    
+        .bottom-links {
+            flex-direction: row;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .footer {
+            width: 95%;
+        }
+    
+        .newsletter button {
+            width: 100%;
+            font-size: 14px;
+        }
+    
+        .icons {
+            font-size: 16px;
+            gap: 10px;
+        }
+    
+        .footer-links {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .bottom-links {
+            flex-direction: column;
+            font-size: 11px;
+            text-align: center;
+        }
+    }</style>
+
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AllRecipes Footer</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+        <footer class="footer">
+            <!-- Logo -->
+            <div class="logo">allrecipes<span class="spoon">.</span></div>
+    
+            <!-- Newsletter Button -->
+            <div class="newsletter">
+                <button>NEWSLETTERS</button>
+            </div>
+    
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <p>Follow Us</p>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-flipboard"></i>
+                </div>
+            </div>
+    
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="column">
+                    <p><strong>DINNERS</strong></p>
+                    <p><strong>INGREDIENTS</strong></p>
+                    <p><strong>CUISINES</strong></p>
+                    <p><strong>NEWS</strong></p>
+                </div>
+                <div class="column">
+                    <p><strong>MEALS</strong></p>
+                    <p><strong>OCCASIONS</strong></p>
+                    <p><strong>KITCHEN TIPS</strong></p>
+                    <p><strong>FEATURES</strong></p>
+                </div>
+            </div>
+    
+            <!-- Bottom Links with Correct Order -->
+            <div class="bottom-links">
+                <div class="column">
+                    <p>About Us</p>
+                    <p>Anti-Racism Pledge</p>
+                    <p>Product Vetting</p>
+                </div>
+                <div class="column">
+                    <p>Editorial Process</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+        </footer>
+    
+    </body>
+    </html>

@@ -1,0 +1,143 @@
+/* General Page Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Title */
+.trending-title {
+    font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.trending-title span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Grid Layout */
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.trend-item {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trend-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.trend-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Home Cook Section */
+.home-cook {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-cook h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D48A00;
+    margin-bottom: 10px;
+}
+
+.home-cook p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: #E57A23;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .trending-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trend-item img {
+        height: 150px;
+    }
+
+    .trend-title {
+        font-size: 14px;
+    }
+
+    .image-section img {
+        width: 80px;
+    }
+}

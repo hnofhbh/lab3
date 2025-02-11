@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Menu Bar</title>
+    <link rel="stylesheet" href="Quiry1.css">
+    <link rel="stylesheet" href="NEW Q 2.css">
+    <link rel="stylesheet" href="img style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/308/308099.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* تصميم شريط التنقل */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+/*  زر القائمة (Hamburger Menu) يظهر فقط على الجوال */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #E36F32;
+}
+
+/* تصميم اللوجو */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E36F32;
+}
+
+.logo img {
+    height: 24px;
+    margin-right: 5px;
+}
+
+/*  تصميم شريط البحث */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    width: 200px;
+}
+
+.search-bar button {
+    background: #E36F32;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    color: white;
+    font-size: 16px;
+}
+
+/*  تصميم زر تسجيل الدخول */
+.login {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.login i {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #E36F32;
+}
+.container{
+
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+}
+
+</style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/128/308/308099.png" alt="AllRecipes">
+                allrecipes
+            </a>
+         </div>
+             <div class="search-bar">
+            <input type="text" placeholder="Find a recipe or ingredient">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="login">
+            <i class="fas fa-user"></i> Log In
+        </div>
+    </nav>
+
+    
+<!--HERE SI 3-->
+<div class="content">
+    <h1>
+        <span class="americas-text" style="color: aliceblue">Americas</span> 
+        <span class="Primary-text">#1Trusted Recipe Resource</span>
+    </h1>
+<!--box-->
+<div class="stats-container">
+    <div class="stat-box">
+        <span class="dot" style="background-color: rgb(15, 185, 134);"></span>
+        <span class="number">113K</span>
+        <p class="label">Original Recipes</p>
+    </div>
+    <div class="stat-box">
+        <span class="dot" style="background-color: red;"></span>
+        <span class="number">6.9M+</span>
+        <p class="label">Ratings & Reviews</p>
+    </div>
+    <div class="stat-box">
+        <span class="dot" style="background-color: rgb(255, 251, 0);"></span>
+        <span class="number">60M</span>
+        <p class="label">Home Cooks</p>
+    </div>
+     <!--box-->
+     <!--HERE DISIN FOR SICION-->
+     
+     
+
+</div>          
+</header>
+
+
+<main>
+<!--Magazine-->
+<section id="Magazine"> 
+<div class="img-container">
+    <img src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600" 
+    alt="Healthy food with vegetables and fruits" class="food-image">
+</div>
+</section>
+
+<!--Magazine End-->
+<!--Newsletters-->          
+<!--هنا الاطعمة الجديدة-->
+<p class="category">MAIN DISHES</p>
+<h1 class="title">7 Air Fryer Dinners for Every Night of the Week</h1>
+<p class="description">
+Your beloved countertop appliance is going to be as busy as you are:
+use it for crispy chicken, shrimp, and so much more.
+</p>
+
+<section class="Newsletters">
+<h2 class="news-title">Food News</h2>
+
+<div class="news-item">
+<img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chili Dish">
+<h3>My Dad Has Won 3 Chili Cook-Offs—Here Are His Secrets</h3>
+</div>
+
+<div class="news-item">
+<img src="https://images.pexels.com/photos/708488/pexels-photo-708488.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cinnamon Rolls">
+<h3>Our Fall Issue of Allrecipes Magazine Is Here</h3>
+</div>
+
+<div class="news-item">
+<img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dunkin Fall Menu">
+<h3>Dunkin’s Fall Menu Is the Best We’ve Seen in Years</h3>
+</div>
+</section>
+</section>
+
+<!--HERE NEW CO-->
+
+<!--Newsletters End-->
+
+
+<!--Sweepstakes Start -->
+
+
+  <!--sic for img-->
+<!--here for imgs-->
+<iframe src="imgs.html" width="100%" height="500px"></iframe>
+<!--he end imgs-->
+
+</main>
+
+<!--TRE-->
+<!-- Home Cook Section -->
+<section class="home-cook">
+<div class="container">
+<div class="content">
+<h1>HOME OF THE <br> HOME COOK</h1>
+<p>We know our community (that's you!) is the key <br> ingredient that sets us apart.  
+    <span class="learn-more">LEARN MORE →</span>
+</p>
+</div>
+<div class="image-section">
+
+<img src="wo.png" alt="Profile Image" class="profile-image">
+</div>
+</div>
+</section>
+<!--HERE SI 3-->
+
+<iframe src="style3.html" width="100%" height="500px"></iframe>
+<iframe src="sty3.html" width="100%" height="500px"></iframe>
+   
+
+</body>
+</html>
